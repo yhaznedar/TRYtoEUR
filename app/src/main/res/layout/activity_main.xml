@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sari"
+    tools:context="example.yunus.doviz.MainActivity">
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:text="0"
+        android:inputType="none"
+        android:textSize="24sp"
+        android:textColor="@color/beyaz"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/price"
+        android:layout_alignBottom="@+id/price"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/imageDoviz"
+        android:text="0"
+        android:textColor="@color/beyaz"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EUR"
+        android:textAlignment="center"
+        android:textColor="@color/beyaz"
+        android:textSize="22sp"
+        android:layout_marginStart="19dp"
+        android:layout_below="@+id/price"
+        android:layout_toEndOf="@+id/imageDoviz" />
+
+
+    <TextView
+        android:id="@+id/tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRY"
+        android:textAlignment="center"
+        android:textColor="@color/beyaz"
+        android:textSize="22sp"
+        android:layout_below="@+id/price"
+        android:layout_alignEnd="@+id/price"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/beyaz"
+        android:textSize="16sp"
+        android:text="Güncelleme tarihi: 2017-08-15"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="119dp" />
+
+    <ImageView
+        android:id="@+id/imageDoviz"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/unnamed"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/beyaz"
+        android:text="------>"
+        android:layout_alignBaseline="@+id/amount"
+        android:layout_alignBottom="@+id/amount"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
